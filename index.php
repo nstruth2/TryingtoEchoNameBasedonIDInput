@@ -17,12 +17,15 @@ $(document).ready(function() {
 $('#butsave').on('click', function() {
 let name = $('#name').val();
 let email = $('#email').val();
+let identification = $('#identification').val();
+
 	$.ajax({
 		url: "save.php",
 		type: "POST",
 		data: {
 			name: name,
-			email: email
+			email: email,
+			identification: identification
 		},
 		cache: false,
 		success: function(dataResult){

@@ -60,7 +60,6 @@ echo $r['name']; // will return the price
 // Check connection
 
 $sql = "SELECT name, email, id FROM crud";
-$sql2 = "SELECT name, email FROM crud WHERE id=?id";
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {
