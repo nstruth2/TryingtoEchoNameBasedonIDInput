@@ -13,7 +13,7 @@
 </p>    
 <script>
 $(document).ready(function() {
-$('#targetLegit').load('show.php');
+
 $('#butsave').on('click', function() {
 let name = $('#name').val();
 let email = $('#email').val();
